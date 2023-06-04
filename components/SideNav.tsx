@@ -112,7 +112,7 @@ const itemsHome = [
 export function SideNav() {
   const router = useRouter();
   console.log(router.asPath);
-  let items = [{}];
+  let items = [{ title: "", links: [{ href: "", children: "" }] }];
   if (router?.asPath === "/") {
     items = itemsHome;
   } else if (router?.asPath === "/docs/api") {
